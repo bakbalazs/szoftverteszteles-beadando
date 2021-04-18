@@ -1,1 +1,0 @@
-szoftverteszteles-beadando
