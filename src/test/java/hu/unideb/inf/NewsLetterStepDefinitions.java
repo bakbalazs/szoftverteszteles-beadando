@@ -31,6 +31,6 @@ public class NewsLetterStepDefinitions extends StepDefinitions {
 
     @Then("Newsletter : You have successfully subscribed to this newsletter.")
     public void newsLetterSuccessEmailAddressShow() {
-        assertEquals("Newsletter : Invalid email address.", homePage.getNewsLetterMessage());
+        assertEquals("Newsletter : You have successfully subscribed to this newsletter.", homePage.getNewsLetterMessage());
     }
 }
