@@ -94,7 +94,7 @@ public class RegistrationStepDefinitions extends StepDefinitions {
     public void userEnterValidRegistrationData() {
         for (RegistrationField registrationField : registrationFields) {
             if (!registrationField.isSelect()) {
-                driver.findElement(By.id(registrationField.getId())).sendKeys(registrationField.getValue());
+                homePage.fillField(registrationField.getId(), registrationField.getValue());
             } else {
                 Select tmp = new Select(driver.findElement(By.id(registrationField.getId())));
                 tmp.selectByValue(registrationField.getValue());

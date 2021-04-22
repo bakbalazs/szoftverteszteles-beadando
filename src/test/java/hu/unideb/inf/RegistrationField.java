@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class RegistrationField {
 
-    private String id;
-    private String value;
-    private Boolean select;
+    private final String id;
+    private final String value;
+    private final Boolean select;
 
     @Override
     public boolean equals(Object o) {
@@ -37,23 +37,12 @@ public class RegistrationField {
         return select;
     }
 
-    public void setSelect(Boolean select) {
-        this.select = select;
-    }
-
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getValue() {
         return value;
     }
 
-    public void setValue(String value) {
-        this.value = value;
-    }
 }
